@@ -1,0 +1,65 @@
+div {
+    border: black 5px solid;
+    margin: 10px;
+    padding: 10px;
+}
+  
+div :first-child {
+    color: red;
+}
+
+a:link {
+    background-color: coral;
+}
+
+a:visited {
+    background-color: lightblue;
+}
+
+/* p.a:hover{
+    background-color: red;
+    color: blue;
+} */
+
+p.a{
+    background-color: white;
+    color: black;
+}
+
+p.a:active{
+    background-color: red;
+    color: blue;
+}
+
+input:focus {
+    border: red 2px dotted;
+    padding: 2px;
+}
+
+ p::first-line {
+    text-transform: uppercase;
+} 
+
+p::first-letter {
+    color: red;
+    
+}
+
+p.cuidado::before {
+    content: "Warning!!: ";
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+p.cuidado::after {
+    content: " (prova after).";
+}
+
+pre.d {
+    counter-reset: cuenta-parrafos;
+}
+  
+p.c::before {
+    content: counter(cuenta-parrafos, hiragana)". ";
+    counter-increment: cuenta-parrafos ;
+}
